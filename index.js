@@ -18,6 +18,8 @@ var api = new ParseServer({
   appId: process.env.APP_ID || 'myAppId',
   masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
+  appName: process.env.APP_NAME,
+  publicServerURL: process.env.PUBLIC_SERVER_URL,
   emailAdapter: SimpleSendGridAdapter({
     apiKey: process.env.EMAIL_API_KEY,
     fromAddress: process.env.EMAIL_FROM_ADDRESS,
